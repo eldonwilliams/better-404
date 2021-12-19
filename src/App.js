@@ -2,6 +2,7 @@ import { Card, CssBaseline, Typography } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useEffect, useState } from "react";
 import { Motion, spring } from "react-motion";
+import ForkMeOnGithub from "fork-me-on-github";
 import ToolBackground from "./components/ToolBackground";
 import useMousePosition from "./hooks/useMousePosition";
 
@@ -25,6 +26,7 @@ const App = () => {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
+      <ForkMeOnGithub repo="https://github.com/eldonwilliams/better-404" colorBackground="#ffffff" colorOctocat="#121212" />
       <ToolBackground propNumber={50} />
       <Motion
               defaultStyle={{ opacity: 0, x: window.innerWidth / 2, y: window.innerHeight / 2 }}
